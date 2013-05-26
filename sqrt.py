@@ -7,3 +7,6 @@ for k in range(6):
     s = 0.5 * (s + x/s)
 
 print "after %s iterationsi, s = %s" % (k+1,s) 
+
+
+
