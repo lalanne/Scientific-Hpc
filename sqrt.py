@@ -14,7 +14,7 @@ def sqrt2(x, debug=False):
     if x<.0:
         print " [ERROR] Please enter a valid number >= 0!"
         return nan
-    assert x>0, "Should not get here"
+    assert x>0 and type(x) is float, "Unrecognized input!!!!!"
 
         
     s = 1.
