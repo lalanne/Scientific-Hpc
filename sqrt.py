@@ -7,6 +7,16 @@ def sqrt2(x, debug=False):
     function that calculates root square approximation
     using Newton's method.
     """
+
+    from numpy import nan
+    if x==.0:
+        return 0
+    if x<.0:
+        print " [ERROR] Please enter a valid number >= 0!"
+        return nan
+    assert x>0, "Should not get here"
+
+        
     s = 1.
     kmax = 100
     tolerance = 1.e-14
