@@ -34,7 +34,7 @@ def sqrt2(x, debug=False):
     
     return s
 
-def test():
+def inputs_test():
     from numpy import sqrt
     
     x_values = [0., 2., 100., 10000., 1.e-4]
