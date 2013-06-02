@@ -1,7 +1,12 @@
 """
-module to calculate root square.
+Module to calculate root square approximation
+using Newton's method.
 """
 def sqrt2(x):
+    """
+    function that calculates root square approximation
+    using Newton's method.
+    """
     s = 1.
     kmax = 100
     tolerance = 1.e-14
