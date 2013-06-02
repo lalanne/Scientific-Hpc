@@ -1,4 +1,6 @@
-
+"""
+module to calculate root square.
+"""
 def sqrt2(x):
     s = 1.
     kmax = 100
