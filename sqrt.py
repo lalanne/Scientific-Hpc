@@ -34,4 +34,13 @@ def sqrt2(x, debug=False):
     
     return s
 
-
+def test():
+    from numpy import sqrt
+    
+    x_values = [0., 2., 100., 10000., 1.e-4]
+    for x in x_values:
+        print "Testing with x = %20.15e" % x
+        s_actual = sqrt2(x)
+        s_expected = sqrt(x)
+        print "actual s = %20.15e expected s = %20.15e" % (s_actual, s_expected)
+        assert abs(s_actual-s_expected) < 1e-14, "Disagree for x = %20.15e" % x
